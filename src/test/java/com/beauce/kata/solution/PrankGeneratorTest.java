@@ -34,7 +34,7 @@ class PrankGeneratorTest {
 
     @Test
     void generate_prank_for_other() {
-        var result = generator.generatePrank(new Target("David", Role.OTHER));
-        assertThat(result).isEqualTo("April Fools, David!");
+        var result = generator.generatePrank(new Target("Dave", Role.OTHER));
+        assertThat(result).isEqualTo("April Fools, Dave!");
     }
 }

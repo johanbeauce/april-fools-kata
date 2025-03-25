@@ -39,7 +39,7 @@ void should_generate_prank_based_on_role() {
     @Test
     void generate_prank_for_other() {
         var result = generator.generatePrank(new Target("Dave", "other"));
-        assertThat(result).isEqualTo("April Fools, David!");
+        assertThat(result).isEqualTo("April Fools, Dave!");
     }
 }
 ```
