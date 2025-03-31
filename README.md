@@ -43,3 +43,31 @@ public class AprilFoolsApp {
     }
 }
 ```
+## Bonus step for fast finishers:
+
+### A) Add a new prank.
+
+Add a new prank for a "HR" role to verify your new prank generator works.
+
+---
+### B) Allow Multiple Applicable Strategies: 
+
+a target can now match multiple strategies (e.g. a DEVELOPER who is also a MANAGER). Add a prank for this case. Verify your prank generator can handle if the target is developer and manager.
+
+💡 **Challenge**: Do you stick with List<PrankStrategy> or switch to a Chain of Responsibility?
+
+---
+### C) Time-Based Pranks:
+
+The prank should be different by time of day. For example, a morning prank could be different from an afternoon prank. Implement this feature and ensure the prank changes based on the time of day.
+
+💡 **Challenge**: How far can you stretch the Strategy Pattern before you need another pattern (e.g. Rules Engine)?
+
+---
+### D) Strategy Composition:
+
+Combine multiple strategies into composite strategies.
+* For instance, a strategy that wraps another to add emojis, uppercase text, or a disclaimer.
+* Implement a ComposablePrankStrategy decorator.
+
+💡 **Challenge**: Design a system where behaviors can be added like LEGO bricks.
